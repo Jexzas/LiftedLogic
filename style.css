@@ -12,6 +12,7 @@
 }
 
 body {
+    font-size: 18px;
     width: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -91,7 +92,7 @@ h1 {
 #body1 {
     margin-top: 0px;
     height: 55vh;
-    background-image: url('./Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)) , url('./Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,18 +112,19 @@ h1 {
 
 #body2 {
     margin-top: 0px;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-top: 4em;
     padding-bottom: 4em;
     display: flex;
     height: 55vh;
+    max-width: 100%;
     vertical-align: middle;
     flex-basis: 100%;
     background-color: var(--white);
 }
 
 #body2Sub {
-    width: 70%;
+    width: 100%;
     display: flex;
     vertical-align: middle;
     margin: auto auto;
@@ -130,16 +132,21 @@ h1 {
 }
 
 #body2Sub img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     padding-right: 2em;
 }
 
 #body2SubSection {
+    padding-right: 3em;
+    height: 100%;
     display: flex;
     flex-direction: column;
     @media (min-width: 1600px) {
         flex-basis: 50%;
+    }
+    @media (max-width: 1599px) {
+        flex-basis: 70%;
     }
 }
 
