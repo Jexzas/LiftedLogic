@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synder Recordings</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
     <script src="./scripts.js" defer></script>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbarDesktop">
         <img alt="the synder recordings logo" src="./Logos/Logo-Blue.svg">
-        <span id="navContainer">
-            <ul id="navList">
+        <span id="navContainerDesktop">
+            <ul id="navListDesktop">
                 <li class="navLink"><img alt="icon of a house" class="navIcon" src="./Icons/Nav Icons/Home.svg">Home</li>
                 <li class="navLink"><img alt="icon of a vinyl record" class="navIcon" src="./Icons/Nav Icons/Record.svg">Records</li>
                 <li class="navLink"><img alt="icon of a music note" class="navIcon" src="./Icons/Nav Icons/Music Note.svg">Music</li>
@@ -21,10 +27,25 @@
         </span>
         <button id="signUp">Sign Up</button>
     </nav>
+    <nav id="navbarMobile">
+        <img alt="the synder recordings logo" src="./Logos/Logo-Blue.svg">
+        <a id="menuButton" href="#" data-target="navContainerMobile" data-toggle="collapse">Menu</a>
+    </nav>
+    <div id="navContainerMobile" class="collapse collapsed">
+        <ul id="navListMobile">
+            <li class="navLink"><img alt="icon of a house" class="navIcon" src="./Icons/Nav Icons/Home.svg">Home</li>
+            <li class="navLink"><img alt="icon of a vinyl record" class="navIcon" src="./Icons/Nav Icons/Record.svg">Records</li>
+            <li class="navLink"><img alt="icon of a music note" class="navIcon" src="./Icons/Nav Icons/Music Note.svg">Music</li>
+            <li class="navLink"><img alt="icon of people" class="navIcon" src="./Icons/Nav Icons/People.svg">Artists</li>
+            <li class="navLink"><img alt="icon of a calendar" class="navIcon" src="./Icons/Nav Icons/Calendar.svg">Concerts</li>
+        </ul>
+        <br>
+        <button id="signUp">Sign Up</button>
+    </div>
     <div id="body1">
         <div id="body1Sub">
             <h1>A.M. Paradox</h1>
-            <p>
+            <p class="largeBody">
                 Christopher Brent Wood, better known by his stage name Brent Faiyaz, is
                 an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox, in 2016.
             </p>
@@ -38,7 +59,7 @@
                     Brent Faiyaz, So 
                     Far Gone
                 </h3>
-                <p>
+                <p class="mediumBody">
                     Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career.  On January 19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and received with positive reviews from music critics.  On January 26, 2017, Sonder released their debut EP Into.
                 </p>
                 <button class="learnMore">
@@ -46,6 +67,89 @@
                 </button>
             </section>
         </div>
+    </div>
+    <div id="body3">
+        <div id="body3Sub1">
+            <h3 id="body3Heading">New Releases</h3>
+            <p id="body3Subheading" class="largeBody">
+                New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.
+            </p>
+        </div>
+        <div id="body3Sub2" class="splide">
+            <div class="splide__track">
+                <ul id="slider" class="splide__list">
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card splide__slide">
+                        <div class="subcard">
+                            <img src="./Images/71RLkNIuZNL._SY355_.jpg">
+                            <div class="desc">
+                                <h4>Trapsoul</h4>
+                                <p class="mediumBody byline">Bryson Tiller</p>
+                                <p class="smallBody about">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button id="back" class="sliderButton">
+                <img src="./Icons/Basic Icons/Arrows Button Left.svg">
+            </button>
+            <button id="next" class="sliderButton">
+                <img src="./Icons/Basic Icons/Arrows Button Right.svg">
+            </button>
+        </div>
+    </div>
+    <div id="body4">
+        
     </div>
 </body>
 </html>
