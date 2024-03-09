@@ -41,6 +41,10 @@ h4 {
     margin-bottom: 0;
 }
 
+form label {
+    color: var(--grey);
+}
+
 .largeBody {
     font-weight: 400;
     font-size: 18px;
@@ -57,6 +61,11 @@ h4 {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+}
+
+gmp-map {
+    margin-top: 25em;
+    position: relative;
 }
 
 @media (min-width: 1000px) {
@@ -306,6 +315,32 @@ h4 {
     justify-content: center;
 }
 
+#body4 {
+    height: 55vh;
+    width: 100%;
+}
+
+#body5 {
+    width: 100%;
+    background-color: var(--white);
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#body5Section {
+    padding-left: 3em;
+    flex-basis: 66%;
+}
+
+#body5Image {
+    flex-basis: 33%;
+    background-image: url('./Images/harry-swales-0l0KjNoAfAk-unsplash.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
 #slider {
     margin-left: 1em;
     margin-right: 1em;
@@ -429,4 +464,9 @@ h4 {
 
 .splide__pagination {
     display: none!important;
+}
+
+.formText {
+    color: var(--grey);
+    margin-right: 25em;
 }
