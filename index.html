@@ -141,12 +141,14 @@
                     </li>
                 </ul>
             </div>
-            <button id="back" class="sliderButton">
-                <img src="./Icons/Basic Icons/Arrows Button Left.svg">
-            </button>
-            <button id="next" class="sliderButton">
-                <img src="./Icons/Basic Icons/Arrows Button Right.svg">
-            </button>
+            <div>
+                <button id="back" class="sliderButton">
+                    <img src="./Icons/Basic Icons/Arrows Button Left.svg">
+                </button>
+                <button id="next" class="sliderButton">
+                    <img src="./Icons/Basic Icons/Arrows Button Right.svg">
+                </button>
+            </div>
         </div>
     </div>
     <div id="body4">
@@ -160,22 +162,111 @@
             <p class="largeBody formText">
                 New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.
             </p>
-            <form id="contact">
-                <label>First Name</label>
-                <input placeholder="First Name" type="text">
-                <label>Last Name</label>
-                <input placeholder="Last Name" type="text">
-                <label>Email Address</label>
-                <input placeholder="Email Address" type="text">
-                <label>Reason for Contacting</label>
-                <select>
-                    <option disabled selected>Select One</option>
-                </select>
+            <form id="contact" method="post">
+                <div class="form-box">
+                    <label class='form-control bodySmall' for="fname">First Name</label>
+                    <input class='form-control' id='fname' placeholder="&nbsp;First Name" type="text" required>
+                </div>
+                <div class="form-box">
+                    <label class='form-control bodySmall' for="lname">Last Name</label>
+                    <input class='form-control' id='lname' placeholder="&nbsp;Last Name" type="text" required>
+                </div>
+                <div class="form-box">
+                    <label class='form-control bodySmall' for="email">Email Address</label>
+                    <input class='form-control' id='email' placeholder="&nbsp;Email Address" type="email" required>
+                </div>
+                <div class="form-box">
+                    <label class='form-control bodySmall' for="reason">Reason for Contacting</label>
+                    <select class='form-control bodySmall' id="reason" required>
+                        <option disabled selected>&nbsp;Select One</option>
+                        <option value="idk">No options were provided</option>
+                        <option value="another one">Another one</option>
+                    </select>
+                </div>
+                <div class="form-bigbox">
+                    <label class='form-big bodySmall' for="message">Message (Optional)</label>
+                    <textarea class='form-big' id="message" placeholder="&nbsp;Write a brief message..."></textarea>
+                </div>
+                <button id="formSubmit" class="mediumBody" type="submit">
+                    Learn More
+                </button>
             </form>
         </div>
         <div id="body5Image">
             &nbsp;
         </div>
     </div>
+    <footer>
+        <div id="topFooter">
+            <div class="footerCol infoPane">
+                <img src="./Logos/Logo-White.svg">
+                <p class="largeBody">8521 W Fairfax Rd
+                    Los Angeles, CA</p>
+                <p class="largeBody">
+                    990210
+                    <br>
+                    (909) 505 4302      
+                </p>
+            </div>
+            <div class="footerCol">
+                <ul class="footerList">
+                    <li class="listHeaderFooter">EXPLORE</li>
+                    <li class="listFooterItem mediumBody">About Us</li>
+                    <li class="listFooterItem mediumBody">Our Story</li>
+                    <li class="listFooterItem mediumBody">Team</li>
+                    <li class="listFooterItem mediumBody">Careers</li>
+                    <li class="listFooterItem mediumBody">FAQ</li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul class="footerList">
+                    <li class="listHeaderFooter mediumBody">MUSIC</li>
+                    <li class="listFooterItem mediumBody">Missing Out</li>
+                    <li class="listFooterItem mediumBody">Trapsoul</li>
+                    <li class="listFooterItem mediumBody">Sonder Sons</li>
+                    <li class="listFooterItem mediumBody">Paradise Today</li>
+                    <li class="listFooterItem mediumBody">Needed</li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul class="footerList">
+                    <li class="listHeaderFooter">ARTISTS</li>
+                    <li class="listFooterItem mediumBody">Brent Faiyaz</li>
+                    <li class="listFooterItem mediumBody">Drake</li>
+                    <li class="listFooterItem mediumBody">Bryson Ford</li>
+                    <li class="listFooterItem mediumBody">Young Ford</li>
+                    <li class="listFooterItem mediumBody">Roy Fresco</li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul class="footerList">
+                    <li class="listHeaderFooter">RECORDS</li>
+                    <li class="listFooterItem mediumBody">What a Time</li>
+                    <li class="listFooterItem mediumBody">Coming Home</li>
+                    <li class="listFooterItem mediumBody">Always First</li>
+                    <li class="listFooterItem mediumBody">So Far Gone</li>
+                    <li class="listFooterItem mediumBody">Big Bluez</li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomFooter">
+            <div class="leftFoot">
+                <ul id="privTerms">
+                    <li class="largeBody">
+                        Privacy Policy
+                    </li>
+                    <li class="largeBody">
+                        Terms & Conditions
+                    </li>
+                </ul>
+            </div>
+            <div class="rightFoot">
+                <img class="social" src="./Icons/Social Icons/007-instagram 1.svg">
+                <img class="social" src="./Icons/Social Icons/009-youtube 1.svg">
+                <img class="social" src="./Icons/Social Icons/004-twitter 1.svg">
+                <img class="social" src="./Icons/Social Icons/002-facebook 1.svg">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

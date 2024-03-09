@@ -20,6 +20,20 @@ body {
     background-color: var(--light-grey);
 }
 
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1000px) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 h1 {
     font-size: 72px;
     margin: 0;
@@ -66,6 +80,18 @@ form label {
 gmp-map {
     margin-top: 25em;
     position: relative;
+    @media (max-width: 1000px) {
+        margin-top: 30em;
+    }
+    @media (max-width: 800px) {
+        margin-top: 35em;
+    }
+    @media (max-width: 605px) {
+        margin-top: 45em;
+    }
+    @media (max-width: 400px) {
+        margin-top: 50em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -211,12 +237,18 @@ gmp-map {
         animation: body1Anim 20s ease-in-out;
         animation-iteration-count: infinite;
     }
+    @media (max-width: 600px) {
+        padding-left: 2em;
+    }
 }
 
 #body1Sub {
     display: flex;
     flex-direction: column;
     width: 45%;
+    @media (max-width: 600px) {
+        width: 75%
+    }
 }
 
 #body2 {
@@ -313,6 +345,8 @@ gmp-map {
 #body3Sub2 {
     text-align: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #body4 {
@@ -323,22 +357,35 @@ gmp-map {
 #body5 {
     width: 100%;
     background-color: var(--white);
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: row;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 }
 
 #body5Section {
     padding-left: 3em;
-    flex-basis: 66%;
+    padding-right: 9em;
+    padding-bottom: 3em;
+    flex-basis: 60%;
+    @media (max-width: 600px) {
+        padding-right: 3em;
+    }
 }
 
 #body5Image {
-    flex-basis: 33%;
+    flex-basis: 40%;
     background-image: url('./Images/harry-swales-0l0KjNoAfAk-unsplash.jpg');
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 55vh;
+        flex-basis: inherit;
+    }
 }
 
 #slider {
@@ -350,6 +397,127 @@ gmp-map {
     padding-top: auto;
     vertical-align: middle;
     margin-bottom: 2em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    columns: 2;
+    width: 100%;
+}
+
+#contact .form-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#contact .form-bigbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+#contact input.form-control, #contact select.form-control {
+    height: 3em;
+    border-radius: 2px;
+    border: 1px solid var(--grey);
+}
+
+#contact textarea {
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-top: 1em;
+    height: 144px;
+}
+
+#contact ::placeholder, #contact textarea::placeholder, #contact option {
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#contact label {
+    margin-bottom: .5em;
+}
+
+#message {
+    border: 1px solid var(--grey);
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#formSubmit {
+    margin-top: 1em;
+    background-color: var(--faded-green);
+    color: var(--green);
+    border: none;
+    border-radius: 3px;
+    height: 2.5em;
+    width: 8em;
+}
+
+#formSubmit:hover {
+    background-color: var(--blue);
+    color: white;
+    height: 2.75em;
+    width: 8.5em;
+    transition-duration: 1s;
+}
+
+#topFooter {
+    width: 100%;
+    padding-top: .5em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (max-width: 1000px) {
+        padding-right: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+#topFooter .infoPane {
+    @media (max-width: 1000px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+#bottomFooter {
+    width: 90%;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#privTerms {
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px!important;
+}
+
+#privTerms li {
+    padding: 1em;
+}
+
+#reason {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    height: 3em;
 }
 
 .collapse.collapsed {
@@ -402,9 +570,10 @@ gmp-map {
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media (max-width: 999px) {
-        width: 70%;
-    } 
+    @media (max-width: 1000px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 .card:not(.is-active) {
@@ -468,5 +637,45 @@ gmp-map {
 
 .formText {
     color: var(--grey);
-    margin-right: 25em;
+    margin-right: 17em;
+    @media (max-width: 1000px) {
+        margin-right: 1em;
+    }
+}
+
+.footerCol {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCol img {
+    width: 9em;
+}
+
+.footerList {
+    list-style: none;
+}
+
+.listHeaderFooter {
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: 1000px) {
+        flex-direction: row;
+    }
+}
+
+.listFooterItem {
+    padding-top: 1em;
+}
+
+.social {
+    padding: .5em;
+    filter: invert(100%) sepia(7%) saturate(281%) hue-rotate(268deg) brightness(117%) contrast(100%);
+}
+
+.rightFoot { 
+    display: flex;
 }

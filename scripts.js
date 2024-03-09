@@ -4,9 +4,11 @@ let splide = new Splide('.splide', {
     breakpoints: {
         1000: {
             fixedWidth: '80vw',
+            perPage: 1
         },
         640: {
-            fixedWidth: '98vw',
+            fixedWidth: '100%',
+            perPage: 1
         }
     },
     focus: 'center',
