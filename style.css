@@ -494,6 +494,7 @@ gmp-map {
         padding-right: 0;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -672,6 +673,9 @@ gmp-map {
 
 .footerList {
     list-style: none;
+    @media (max-width: 400px) {
+        padding-inline-start: 0px!important; 
+    }
 }
 
 .listHeaderFooter {
