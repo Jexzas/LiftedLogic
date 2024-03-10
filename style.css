@@ -176,18 +176,6 @@ gmp-map {
     padding: 1em;
 }
 
-#signUp {
-    margin-bottom: .5em;
-}
-
-#signUp:hover {
-    background-color: var(--blue);
-    color: var(--white);
-    transform: scale(1.1);
-    transition-duration: .35s;
-
-}
-
 #navListMobile {
     padding-left: 0;
     display: flex;
@@ -228,6 +216,18 @@ gmp-map {
     border: none;
     background-color: var(--faded-green);
     color: var(--green);
+    margin-bottom: .5em;
+    /* Very specific media query going here */
+    @media (min-width: 1000px) and (max-width: 1030px) {
+        height: 3em;
+    }
+}
+
+#signUp:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transform: scale(1.1);
+    transition-duration: .35s;
 }
 
 @keyframes body1Anim {
