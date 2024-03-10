@@ -18,17 +18,26 @@ let splide = new Splide('.splide', {
  * Code that makes the navbar stick to top
  */
 const navbar = document.querySelector('#navbarDesktop');
-let distanceFromTop = navbar.offsetTop;
+const navbarMobile = document.querySelector('#navbarMobile');
+let stickyDistance = navbar.offsetTop;
 
-function stickynavbar() {
-  if (window.scrollY >= distanceFromTop) {    
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');    
-  }
+function stickyNavbar() {
+    if (window.scrollY >= stickyDistance) {    
+        navbar.classList.add('sticky');
+        navbarMobile.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky'); 
+        navbarMobile.classList.remove('sticky');   
+    }
+    if (window.scrollY == 0){ 
+        navbar.classList.remove('sticky');
+        navbarMobile.classList.remove('sticky');
+    }
 }
 
-window.addEventListener('scroll', stickynavbar);
+window.addEventListener('scroll', () => {
+    stickyNavbar();
+});
 
 /**
  * Code that makes a collapsible menu work
